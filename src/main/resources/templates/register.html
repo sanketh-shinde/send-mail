@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="process-registration" method="post">
+        <h1>Registration</h1>
+        <input type="text" placeholder="enter your name" name="name" required />
+        <input type="email" placeholder="enter your email" name="email" required />
+        <input type="password" placeholder="enter your password" name="password" required />
+        <input type="submit" value="register" />
+        <p>Already Registered?  <a href="login">Login Here</a> </p>
+    </form>
+</body>
+</html>

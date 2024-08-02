@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="send-mail" method="post">
+        <h1 th:text="${'Welcome ' + loggedInUser.name}"></h1>
+        <h2 th:text="${message}" id="error"></h2>
+        <label>
+            <p>To</p>
+            <input type="email" name="to" placeholder="enter email" />
+        </label>
+
+        <label>
+            <p>Subject</p>
+            <input type="text" name="subject" placeholder="subject" />
+        </label>
+
+        <label>
+            <p>Message</p>
+            <input type="text" name="body" placeholder="message" />
+        </label>
+        <input type="submit" value="send">
+    </form>
+</body>
+</html>
